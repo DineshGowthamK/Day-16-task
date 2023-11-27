@@ -1,0 +1,107 @@
+Notes :
+//!Callback using setTimeout
+/*console.log("App Started");
+setTimeout(()=>console.log("Loading...."),3000);
+setTimeout(()=>console.log("App Completed"),5000);
+console.log("Building the application...."); */
+
+//!Callback using function
+/*const complete= ()=>{
+    console.log("Finish");
+}
+const add = (callback,x,y)=>{
+    // var x=2;
+    // var y=3;
+    console.log("Sum",x+y);
+    callback();
+}
+add(complete,2,3); */
+
+//!Callback using function and setTimeout
+/*function add(value1, value2, cb){ //cb-callback
+    //cb(value1+value2,"We got it by adding");
+    setTimeout(()=>{
+        console.log("Executed after 5 seconds");
+        cb(value1+value2,"We got it by adding","This is callback");
+    },5000)
+    return "First one"
+}
+
+function print(...data){ //...data - rest parameter - remaining values will be considered
+    console.log(...data);
+}
+console.log(add(10,20,print));*/
+
+//!Callback Hell Of Pain
+/*setTimeout(()=>{
+    console.log("5");
+    setTimeout(()=>{
+        console.log("4");
+        setTimeout(()=>{
+            console.log("3");
+            setTimeout(()=>{
+                console.log("2");
+                setTimeout(()=>{
+                    console.log("1");
+                    setTimeout(()=>{
+                        console.log("Happy Independence Day");
+                    },1000)
+                },1000)
+            },1000)
+        },1000)
+    },1000)
+},1000) */
+
+/*
+const division = document.querySelector("task");
+setTimeout(()=>{
+    const p10 = document.querySelector("p");
+    p10.textContent = "10";
+    setTimeout(()=>{
+        const p9 = document.querySelector("p");
+        p9.textContent = "9";
+        setTimeout(()=>{
+            const p8 = document.querySelector("p");
+            p8.textContent = "8";
+            setTimeout(()=>{
+                const p7 = document.querySelector("p");
+                p7.textContent = "7";
+                setTimeout(()=>{
+                    const p7 = document.querySelector("p");
+                    p7.textContent = "7";
+                    setTimeout(()=>{
+                        const p6 = document.querySelector("p");
+                        p6.textContent = "6";
+                        setTimeout(()=>{
+                            const p5 = document.querySelector("p");
+                            p5.textContent = "5";
+                            setTimeout(()=>{
+                                const p4 = document.querySelector("p");
+                                p4.textContent = "4";
+                                setTimeout(()=>{
+                                    const p3 = document.querySelector("p");
+                                    p3.textContent = "3";
+                                    setTimeout(()=>{
+                                        const p2 = document.querySelector("p");
+                                        p2.textContent = "2";
+                                        setTimeout(()=>{
+                                            const p1 = document.querySelector("p");
+                                            p1.textContent = "1";
+                                            setTimeout(()=>{
+                                                const ptag = document.querySelector("p");
+                                                ptag.textContent = "Happy Independence Day";
+                                            },1000);
+                                        },1000);
+                                    },1000);
+                                },1000);
+                            },1000);
+                        },1000);
+                    },1000);
+                },1000);
+            },1000);
+        },1000);
+    },1000);
+},1000);
+division.append(p10,p9,p8,p7,p6,p5,p4,p3,p2,p1,ptag);
+document.body.append(division);
+*/
